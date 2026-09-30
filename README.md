@@ -43,6 +43,18 @@ The initial window includes a small notes list solely to demonstrate writing
 to and reading from SQLite. It can be replaced by the final tracker workflow
 as the application's data model is developed.
 
+## Application error log
+
+The application writes Python errors and unexpected exceptions to a separate
+rotating `app_errors.log` file. It tries the application folder first, then
+`%LOCALAPPDATA%\\CoCTracker`, and finally the system temporary folder if the
+earlier locations are not writable. The log keeps the current file plus up to
+three backups of about 1 MB each. It is separate from fax records and is
+excluded from Git. When reporting a problem, provide this file to support.
+
+Avoid putting patient names, patient IDs, fax contents, or other sensitive
+information into error messages. Exception details may be recorded in the log.
+
 ## Windows build
 
 Run `build.bat` from a command prompt after completing `setup.bat`.
