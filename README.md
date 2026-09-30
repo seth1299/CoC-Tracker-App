@@ -8,7 +8,7 @@ The faxes that are sent and received are known as Coordination-of-Care Requests 
 
 Currently, all of the information is stored in a Google Sheet (which can be extrapolated as a .csv file).
 
-The overall purpose of this application and tracker is to keep track of sent and received faxes for
+The overall purpose of this application and tracker is to keep track of sent and received faxes for patients.
 
 ## Development setup
 
@@ -25,15 +25,15 @@ setup.bat
 Alternatively, create and activate a virtual environment manually, then
 install the dependencies:
 
-   ```console
-   python -m pip install -r requirements.txt
-   ```
+```console
+python -m pip install -r requirements.txt
+```
 
 Start the application:
 
-   ```console
-   .venv\Scripts\python.exe main.py
-   ```
+```console
+.venv\Scripts\python.exe main.py
+```
 
 The application creates `coc_tracker.db` beside `main.py`. When running a
 packaged build, it creates the database beside `CoCTracker.exe`. The generated
