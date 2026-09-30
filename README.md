@@ -2,7 +2,7 @@
 
 ## Summary
 
-This is a native windows application that uses Python 3.14 with PyInstaller to allow for easy tracking and managing of sent and received faxes for a medical office setting.
+This is a native windows application that uses Python 3.14 with Qt GUI and PyInstaller to allow for easy tracking and managing of sent and received faxes for a medical office setting.
 
 The faxes that are sent and received are known as Coordination-of-Care Requests (CoC Requests).
 
